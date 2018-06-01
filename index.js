@@ -19,4 +19,11 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'Are you kira?') {
+    msg.reply('NO! I am not Kira! Someone is setting me up!');
+  }
+});
+
+
 client.login(process.env.BOT_TOKEN);
