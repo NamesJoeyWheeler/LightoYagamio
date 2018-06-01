@@ -26,4 +26,10 @@ client.on('message', msg => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content === 'Kill <@USER_ID>') {
+    msg.reply('<@USER_ID> - Cause Of Death: Heart Attack.');
+  }
+});
+
 client.login(process.env.BOT_TOKEN);
