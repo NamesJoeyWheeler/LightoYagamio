@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on('message', msg => {
-  if (msg.content === 'is Kira') {
-    msg.reply('YES, THEY ARE KIRA! NOT ME!');
+  if (msg.content === 'Kill yourself') {
+    msg.reply('No, I will kim them.');
   }
 });
 
