@@ -1,0 +1,2 @@
+# LightoYagamio
+Go away.
