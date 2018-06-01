@@ -25,8 +25,10 @@ client.on('message', msg => {
   }
 });
 
-if message.content.startswith('Kill'):
-   myid = '<@201909896357216256>'
-     await client.send_message(message.channel, ' : Cause of death - Heart Attack' % myid)
+client.on('message', msg => {
+  if (msg.content === 'Who is god?') {
+    msg.reply('I AM THE GOD OF THE NEW WORLD!');
+  }
+});
 
 client.login(process.env.BOT_TOKEN);
