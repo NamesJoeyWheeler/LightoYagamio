@@ -8,6 +8,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === 'キルあなた自身') {
+    msg.reply('いいえ、私はそれらを殺すでしょう。');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'Light') {
     msg.reply('Thats right. I am Light Yagami.');
   }
