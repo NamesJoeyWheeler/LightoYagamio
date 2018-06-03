@@ -20,6 +20,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === 'ライト') {
+    msg.reply('それは正しい。 私は 夜神 月 ライト');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'Light is Kira!') {
     msg.reply('That is right.. I am Kira.');
   }
