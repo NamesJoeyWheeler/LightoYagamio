@@ -49,4 +49,10 @@ client.on('message', msg => {
   }
 });
 
+
+client.on('message', msg => {
+  if (msg.content === 'Light, Catch a pokemon') {
+    msg.reply('p!start');
+  }
+});
 client.login(process.env.BOT_TOKEN);
