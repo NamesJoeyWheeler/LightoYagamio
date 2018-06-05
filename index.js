@@ -28,6 +28,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'Light is Kira!') {
     msg.reply('That is right.. I am Kira.');
+    msg.author.send('SINCE YOU FOUND OUT, YOU MUST DIE!');
   }
 });
 
