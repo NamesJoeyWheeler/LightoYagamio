@@ -49,6 +49,4 @@ client.on('message', msg => {
   }
 });
 
-client.user.setGame('game here !')
-
 client.login(process.env.BOT_TOKEN);
