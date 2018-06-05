@@ -52,7 +52,7 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'Who has a death note?') {
+  if (msg.content === 'Who has a death note?') {
     msg.author.send('I have one. Who do you want to be killed?');
   }
 });
