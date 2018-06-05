@@ -49,6 +49,6 @@ client.on('message', msg => {
   }
 });
 
-bot.user.setGame('Dinkleberg')
+client.User.setGame('#Help for help');
 
 client.login(process.env.BOT_TOKEN);
