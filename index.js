@@ -49,10 +49,7 @@ client.on('message', msg => {
   }
 });
 
+bot.user.setPresence({ 
+  status: 'online', game: { name: 'with my Death Note' } });
 
-client.on('message', msg => {
-  if (msg.content === 'Get a pokemon') {
-    msg.channel.send('p!start');
-  }
-});
 client.login(process.env.BOT_TOKEN);
