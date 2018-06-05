@@ -49,7 +49,7 @@ client.on('message', msg => {
   }
 });
 
-bot.user.setPresence({ 
-  status: 'online', game: { name: 'with my Death Note' } });
-
+bot.on('ready', () => {
+  bot.user.setGame('GAME HERE')
+})
 client.login(process.env.BOT_TOKEN);
