@@ -51,8 +51,8 @@ client.on('message', msg => {
 
 
 client.on('message', msg => {
-  if (msg.content === 'Talk Light') {
-    msg.channel.send('/tts I WILL BE GOD OF THE NEW WORLD');
+  if (msg.content === 'Get a pokemon') {
+    msg.channel.send('p!start');
   }
 });
 client.login(process.env.BOT_TOKEN);
