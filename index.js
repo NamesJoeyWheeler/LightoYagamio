@@ -39,7 +39,7 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Are you kira?') {
+  if (msg.content === 'Are you Kira?') {
     msg.reply('NO! I am not Kira! Someone is setting me up!');
     msg.author.send('I am Kira. Do not tell anyone that alright... Or else I will write your name...');
   }
